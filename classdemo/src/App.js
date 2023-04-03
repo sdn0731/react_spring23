@@ -1,21 +1,17 @@
+import Header from "./components/Header";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header linkText="Learn React" linkUrl="https://reactjs.org" />
     </div>
   );
 }
 
 export default App;
+
+// props -> passed down from parent to child. A child should not change the props
+
+// state -> is owned by component
+  // setState()
+  // hooks
