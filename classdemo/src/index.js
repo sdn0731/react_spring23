@@ -12,8 +12,8 @@ const ThemeSelector = ({children}) => {
   localStorage.setItem('theme', theme)
   return(
     <React.Suspense 
-      fallback={<Spinner animation="border" variant="primary" role="status">
-          <span className="visually-hidden">Loading...</span>
+      fallback={<Spinner animation="border" variant="warning" role="status">
+          <span className="visually-hidden"></span>
         </Spinner>} key={theme}>
       {theme === 'dark' && <DarkTheme />}
       {theme === 'light' && <LightTheme />}

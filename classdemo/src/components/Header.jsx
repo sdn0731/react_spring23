@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import MainBody from "./MainBody";
+import Navigation from "./Navigation";
 
 class Header extends Component{
     //constructor for state
@@ -18,18 +19,7 @@ class Header extends Component{
         console.log(this.state)
         return(
             <header className={`App-header ${this.state.theme}`}>
-                <p className={"testing-this " + this.state.theme}>
-                    Edit<code>src/App.js/</code> and save to reload.
-                </p>
-                <a className="App-link" href={linkUrl} target="_blank" rel="noopener noreferrer">
-                    {linkText}
-                </a>
-                <span>
-                    You have clicked on the button {this.state.count} times!
-                </span>
-                <button role="button" onClick={() => this.setState({ count : this.state.count + 1})}>
-                    Increment Count
-                </button>
+                <Navigation />
                 <MainBody />
             </header>
         )
