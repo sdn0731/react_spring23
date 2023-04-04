@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
+import MainBody from "./MainBody";
 
-class Header extends React.Component{
+class Header extends Component{
     //constructor for state
     constructor(props){
         super(props)
@@ -9,8 +10,6 @@ class Header extends React.Component{
             theme : window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"
         }
     }
-
-    // lifecycle methods
 
     render(){
         const { linkText, linkUrl } = this.props
@@ -31,6 +30,7 @@ class Header extends React.Component{
                 <button onClick={() => this.setState({ count : this.state.count + 1})}>
                     Increment Count
                 </button>
+                <MainBody />
             </header>
         )
     }
