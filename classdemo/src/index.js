@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
+import Spinner from 'react-bootstrap/Spinner';
 // import './sass/App.scss';
 import App from './App';
 
@@ -10,10 +11,12 @@ const ThemeSelector = ({children}) => {
   const theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : window.matchMedia('(prefers-color-scheme: dark)').matches
   localStorage.setItem('theme', theme)
   return(
-    <React.Suspense fallback={<>...Loading</>} key={theme}>
+    <React.Suspense 
+      fallback={<Spinner animation="border" variant="primary" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>} key={theme}>
       {theme === 'dark' && <DarkTheme />}
       {theme === 'light' && <LightTheme />}
-      <button onClick={() => {localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark'); window.location.reload()}}>Change Mode</button>
       {children}
     </React.Suspense>
   )
