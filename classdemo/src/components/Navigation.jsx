@@ -4,8 +4,8 @@ import Container from 'react-bootstrap/Container';
 function Navigation() {
     return(
         <>
-            <img src="classdemo/src/images/image.jpg"></img>
             <h1>SARAH "DASHA" NOLAN</h1>
+            <a class="image" href="https://imgur.com/dAyZ2r9"><img src="https://i.imgur.com/dAyZ2r9.jpg" title="source: imgur.com" width="473" height="473"/></a>
             <Navbar bg="light">
                 <Container>
                     <Nav className="me-auto">

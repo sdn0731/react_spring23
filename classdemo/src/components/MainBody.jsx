@@ -1,5 +1,6 @@
 // create a functional component with hooks 
 import React, { useState } from 'react';
+import Navigation from "./Navigation";
 
 function MainBody() {
     const [name, setName] = useState('');
@@ -10,7 +11,7 @@ function MainBody() {
 
     return(
         <div class="left">
-            <h2 label="#education">EDUCATION</h2>
+            <h2 id="#education">EDUCATION</h2>
             <h4>Columbus State University</h4>
             <ul>
                 <li>Web Development Certificate</li>
@@ -24,7 +25,7 @@ function MainBody() {
             <ul>
                 <li>High School Diploma</li>
             </ul>
-            <h2 label="#experience">EXPERIENCE</h2>
+            <h2 id="#experience">EXPERIENCE</h2>
             <h4>IHOP - Server (June-Sept 2021)</h4>
             <ul>
                 <li>Addressed customer concerns with practical solutions</li>
@@ -43,7 +44,7 @@ function MainBody() {
                 <li>Worked collaboratively to keep client websites updated</li>
                 <li>Identified clients' needs by conducting interviews</li>
             </ul>
-            <h2 label="#skills">SKILLS</h2>
+            <h2 id="#skills">SKILLS</h2>
             <ul>
                 <li>Fluent in both Mac and Windows OS</li>
                 <li>Experienced in the following languages:</li>
@@ -54,6 +55,7 @@ function MainBody() {
                 <ul>
                     <li>GitHub, GitPod, Eclipse, Replit, and others</li>
                 </ul>
+                <li>For examples of my work visit my <a class="link-secondary" href="https://github.com/sdn0731">GitHub</a> account!</li>
             </ul>
         </div>
     )
