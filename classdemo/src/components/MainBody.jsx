@@ -11,7 +11,7 @@ function MainBody() {
 
     return(
         <div class="left">
-            <h2 id="#education">EDUCATION</h2>
+            <h2 id="education">EDUCATION</h2>
             <h4>Columbus State University</h4>
             <ul>
                 <li>Web Development Certificate</li>
@@ -25,7 +25,7 @@ function MainBody() {
             <ul>
                 <li>High School Diploma</li>
             </ul>
-            <h2 id="#experience">EXPERIENCE</h2>
+            <h2 id="experience">EXPERIENCE</h2>
             <h4>IHOP - Server (June-Sept 2021)</h4>
             <ul>
                 <li>Addressed customer concerns with practical solutions</li>
@@ -44,7 +44,7 @@ function MainBody() {
                 <li>Worked collaboratively to keep client websites updated</li>
                 <li>Identified clients' needs by conducting interviews</li>
             </ul>
-            <h2 id="#skills">SKILLS</h2>
+            <h2 id="skills">SKILLS</h2>
             <ul>
                 <li>Fluent in both Mac and Windows OS</li>
                 <li>Experienced in the following languages:</li>
